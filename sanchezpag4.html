@@ -9,7 +9,7 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #2c2c2c, #6b6b6b);
+      background: linear-gradient(135deg, #121212, #2a2a2a); /* Un fondo oscuro más limpio que combina con la otra página */
       font-family: 'Segoe UI', sans-serif;
       color: white;
       min-height: 100vh;
@@ -27,6 +27,7 @@
       font-weight: bold;
       letter-spacing: 2px;
       text-align: center;
+      color: #ff4d4d; /* Cambiado a rojo para mantener la simetría de colores */
     }
 
     /* CONTENEDOR DE TUTORIALES */
@@ -50,22 +51,11 @@
       overflow: hidden;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       transition: 0.3s;
+      background-color: #000;
     }
 
     .embed-responsive:hover {
       transform: scale(1.02);
-    }
-
-    /* Estilo para que el video .webm ocupe todo el espacio de la tarjeta de Bootstrap */
-    .embed-responsive .embed-responsive-item-video {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      background-color: #000;
     }
 
     /* BUSCADOR */
@@ -144,13 +134,13 @@
           <h4 class="text-danger mb-3 font-weight-bold">Low Fade Profesional</h4>
           
           <div class="embed-responsive embed-responsive-16by9 mb-3">
-            <video class="embed-responsive-item-video" controls preload="auto">
-              <source src="videos/video.mp4" type="video/mp4">
+            <video class="embed-responsive-item" controls preload="auto">
+              <source src="videos/video.webm" type="video/webm">
               Tu navegador no soporta la reproducción de este video.
             </video>
           </div>
           
-          <p class="text-light mb-0">Aprende cómo hacer un Low Fade paso a paso usando máquina profesional y técnicas de difuminado.</p>
+          <p class="text-light mb-0" style="text-align: center; color: #e0e0e0 !important;">Aprende cómo hacer un Low Fade paso a paso usando máquina profesional y técnicas de difuminado.</p>
         </div>
       </div>
 
